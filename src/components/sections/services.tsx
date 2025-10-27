@@ -38,7 +38,7 @@ const servicesList = [
     name: "Quiropraxia",
     description: "Ajustes precisos na coluna e articulações para alívio imediato da dor, correção de desalinhamentos e melhora da função do sistema nervoso.",
     icon: Shield,
-    imageId: "geriatric"
+    imageId: "chiropractic"
   },
   {
     name: "RPG (Reeducação Postural Global)",
@@ -60,7 +60,7 @@ function ServiceCard({ name, description, icon: Icon, imageId }: { name: string;
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
       {image && (
-        <div className="relative h-96 w-full">
+        <div className="relative h-[400px] w-full">
           <Image
             src={image.imageUrl}
             alt={image.description}
