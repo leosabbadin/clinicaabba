@@ -26,7 +26,8 @@ const servicesList = [
     name: "Fisioterapia Esportiva",
     description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
     icon: Medal,
-    imageId: "sports-injury"
+    imageId: "sports-injury",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.39.39.jpeg"
   },
   {
     name: "Osteopatia",
@@ -38,7 +39,8 @@ const servicesList = [
     name: "Quiropraxia",
     description: "Ajustes precisos na coluna e articulações para alívio imediato da dor, correção de desalinhamentos e melhora da função do sistema nervoso.",
     icon: Shield,
-    imageId: "chiropractic"
+    imageId: "chiropractic",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg"
   },
   {
     name: "RPG (Reeducação Postural Global)",
@@ -50,23 +52,28 @@ const servicesList = [
     name: "Pilates",
     description: "Serviço focado no fortalecimento do core, flexibilidade e controle corporal. Promove bem-estar e qualidade de vida através de exercícios supervisionados.",
     icon: Dumbbell,
-    imageId: "method-therapist"
+    imageId: "method-therapist",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.20.45.jpeg"
   },
 ];
 
-function ServiceCard({ name, description, icon: Icon, imageId }: { name: string; description: string; icon: React.ElementType; imageId: string; }) {
+function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customImageUrl }: { name: string; description: string; icon: React.ElementType; imageId: string; imageUrl?: string; }) {
   const image = PlaceHolderImages.find(p => p.id === imageId);
+  const imageUrl = customImageUrl || image?.imageUrl;
+  const imageDescription = image?.description || name;
+  const imageHint = image?.imageHint || name.toLowerCase().split(' ').slice(0, 2).join(' ');
+
 
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
-      {image && (
+      {imageUrl && (
         <div className="relative h-[400px] w-full">
           <Image
-            src={image.imageUrl}
-            alt={image.description}
+            src={imageUrl}
+            alt={imageDescription}
             fill
             className="object-cover"
-            data-ai-hint={image.imageHint}
+            data-ai-hint={imageHint}
           />
         </div>
       )}
