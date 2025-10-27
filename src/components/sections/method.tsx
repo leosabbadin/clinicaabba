@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Stethoscope, Users, HeartHandshake } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const features = [
   {
@@ -26,7 +28,7 @@ export default function Method() {
   return (
     <section id="method" className="w-full bg-background py-16 md:py-24">
       <div className="container mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 md:grid-cols-2">
-        <div className="order-2 md:order-1">
+        <div className="order-2 flex flex-col items-start md:order-1">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">
             Mais que Fisioterapia. Um Cuidado que Acolhe.
           </h2>
@@ -36,6 +38,11 @@ export default function Method() {
           <p className="mt-4 text-muted-foreground">
             Nossa missão é promover um serviço inigualável, onde a excelência profissional encontra os valores éticos e cristãos. Aqui, você não é apenas um paciente; vemos você como um todo, cuidando do seu bem-estar físico, emocional e espiritual.
           </p>
+          <Button asChild className="mt-6">
+            <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              Agende uma Consulta
+            </Link>
+          </Button>
           <div className="mt-8 space-y-6">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-4">
