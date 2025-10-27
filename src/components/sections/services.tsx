@@ -67,12 +67,12 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
       {imageUrl && (
-        <div className="relative h-[400px] w-full">
+        <div className="relative h-96 w-full">
           <Image
             src={imageUrl}
             alt={imageDescription}
             fill
-            className="object-cover"
+            className={`object-cover ${name === 'Pilates' ? 'object-top' : ''}`}
             data-ai-hint={imageHint}
           />
         </div>
