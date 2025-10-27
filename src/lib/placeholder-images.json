@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A calming view of a modern physiotherapy clinic interior with soft lighting and plants.",
+      "imageUrl": "https://images.unsplash.com/photo-1598448056086-307e98ef5c4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjE1Njc0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic interior"
+    },
+    {
+      "id": "sports-injury",
+      "description": "An athlete receiving treatment on their knee from a physiotherapist.",
+      "imageUrl": "https://images.unsplash.com/photo-1678356717973-f2177782388a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXRobGV0ZSUyMHRyZWF0bWVudHxlbnwwfHx8fDE3NjE1NzQ5NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "athlete treatment"
+    },
+    {
+      "id": "post-operative",
+      "description": "A patient doing guided exercises for post-operative recovery.",
+      "imageUrl": "https://images.unsplash.com/photo-1606166187734-a4cb74079037?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXRpZW50JTIwcmVjb3Zlcnl8ZW58MHx8fHwxNzYxNTMyMzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "patient recovery"
+    },
+    {
+      "id": "chronic-pain",
+      "description": "A person stretching their back, symbolizing relief from chronic pain.",
+      "imageUrl": "https://images.unsplash.com/photo-1758599879024-7379d769f664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBzdHJldGNoaW5nfGVufDB8fHx8MTc2MTUwMzkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person stretching"
+    },
+    {
+      "id": "neurological",
+      "description": "A therapist assisting a patient with balance and coordination exercises.",
+      "imageUrl": "https://images.unsplash.com/photo-1643300121645-83fe6b0f9315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXRpZW50JTIwdGhlcmFweXxlbnwwfHx8fDE3NjE1NzQ5NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "patient therapy"
+    },
+    {
+      "id": "geriatric",
+      "description": "An elderly person smiling while doing light exercises with a physiotherapist.",
+      "imageUrl": "https://images.unsplash.com/photo-1555996325-449d70a4a7af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWxkZXJseSUyMGV4ZXJjaXNlfGVufDB8fHx8MTc2MTU3NDk0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "elderly exercise"
+    },
+    {
+      "id": "pediatric",
+      "description": "A child playing with therapeutic toys during a physiotherapy session.",
+      "imageUrl": "https://images.unsplash.com/photo-1685362158423-abf004b858d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZCUyMHRoZXJhcHl8ZW58MHx8fHwxNzYxNTcxMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child therapy"
+    }
+  ]
 }
