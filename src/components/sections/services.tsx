@@ -5,44 +5,50 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const servicesList = [
   {
-    name: "Fisioterapia Especializada (Dores Crônicas e Agudas)",
-    description: "Avaliação precisa e tratamento focado em dores crônicas e agudas. Identificamos a causa para recuperar sua função e eliminar a dor.",
+    name: "Fisioterapia Especializada",
+    description: "Avaliação precisa e tratamento focado na recuperação funcional de traumas ortopédicos e disfunções, utilizando as melhores práticas para sua reabilitação.",
     icon: HeartPulse,
     imageId: "chronic-pain"
   },
   {
-    name: "Pré e Pós-Operatório",
-    description: "Cuidado completo da avaliação à alta. Aceleramos sua recuperação funcional pós-cirurgia (coluna, joelho, ombro) e traumas ortopédicos.",
+    name: "Dores Crônicas e Agudas",
+    description: "Abordagem terapêutica para o tratamento de condições agudas e crônicas, visando o alívio da dor e a restauração do seu bem-estar.",
+    icon: HeartPulse,
+    imageId: "chronic-pain"
+  },
+  {
+    name: "Fisioterapia no Pré e Pós-Operatório",
+    description: "Acompanhamento completo, da avaliação à alta, para acelerar a recuperação funcional de cirurgias e traumas ortopédicos de coluna, joelho, ombro e mais.",
     icon: Activity,
     imageId: "post-operative"
   },
   {
+    name: "Fisioterapia Esportiva",
+    description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
+    icon: Medal,
+    imageId: "sports-injury"
+  },
+  {
     name: "Osteopatia",
-    description: "Terapia manual focada na causa raiz do desequilíbrio corporal. Restauramos a mobilidade e aliviamos a dor tratando o corpo de forma integrada.",
+    description: "Terapia manual que investiga e trata a causa raiz da dor, buscando reequilibrar o corpo de forma integrada para restaurar a mobilidade.",
     icon: Bone,
     imageId: "neurological"
   },
   {
     name: "Quiropraxia",
-    description: "Ajustes precisos na coluna e articulações para restaurar o alinhamento. Alívio rápido da dor, correção de tensões e aumento da mobilidade.",
+    description: "Ajustes precisos na coluna e articulações para alívio imediato da dor, correção de desalinhamentos e melhora da função do sistema nervoso.",
     icon: Shield,
     imageId: "geriatric"
   },
   {
-    name: "Fisioterapia Esportiva",
-    description: "Foco na prevenção de lesões e reabilitação de atletas. Retorne ao esporte com mais segurança, força e performance, seja amador ou profissional.",
-    icon: Medal,
-    imageId: "sports-injury"
-  },
-  {
     name: "RPG (Reeducação Postural Global)",
-    description: "Método global para correção de desequilíbrios musculares e alívio de dores estruturais. Ajuste sua postura e melhore sua consciência corporal.",
+    description: "Método de correção postural que trata desequilíbrios musculares de forma global, aliviando dores estruturais e melhorando a consciência corporal.",
     icon: PersonStanding,
     imageId: "pediatric"
   },
   {
     name: "Pilates",
-    description: "Ferramenta de reabilitação e bem-estar com acompanhamento profissional. Fortaleça o core, ganhe flexibilidade e consciência corporal.",
+    description: "Serviço focado no fortalecimento do core, flexibilidade e controle corporal. Promove bem-estar e qualidade de vida através de exercícios supervisionados.",
     icon: Dumbbell,
     imageId: "method-therapist"
   },
