@@ -46,7 +46,8 @@ const servicesList = [
     name: "RPG (Reeducação Postural Global)",
     description: "Método de correção postural que trata desequilíbrios musculares de forma global, aliviando dores estruturais e melhorando a consciência corporal.",
     icon: PersonStanding,
-    imageId: "pediatric"
+    imageId: "pediatric",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/57cbe6b54d12323d54723459acf9f2f31cf00fab/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg"
   },
   {
     name: "Pilates",
@@ -67,12 +68,12 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
       {imageUrl && (
-        <div className="relative h-[500px] w-full">
+        <div className="relative h-[800px] w-full">
           <Image
             src={imageUrl}
             alt={imageDescription}
             fill
-            className={`object-cover ${name === 'Pilates' ? 'object-[50%_60%]' : ''}`}
+            className={`object-cover ${name === 'Pilates' ? 'object-bottom' : ''}`}
             data-ai-hint={imageHint}
           />
         </div>
