@@ -20,7 +20,8 @@ const servicesList = [
     name: "Fisioterapia no Pré e Pós-Operatório",
     description: "Acompanhamento completo, da avaliação à alta, para acelerar a recuperação funcional de cirurgias e traumas ortopédicos de coluna, joelho, ombro e mais.",
     icon: Activity,
-    imageId: "post-operative"
+    imageId: "post-operative",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/57cbe6b54d12323d54723459acf9f2f31cf00fab/WhatsApp%20Image%202025-10-27%20at%2016.34.36.jpeg"
   },
   {
     name: "Fisioterapia Esportiva",
