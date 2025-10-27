@@ -53,7 +53,7 @@ const servicesList = [
     description: "Serviço focado no fortalecimento do core, flexibilidade e controle corporal. Promove bem-estar e qualidade de vida através de exercícios supervisionados.",
     icon: Dumbbell,
     imageId: "method-therapist",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/41b5d48745af26d851740018012bf5ec51efbec4/WhatsApp%20Image%202025-10-27%20at%2015.22.37%20(1).jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/41b5d48745af26d851740018012bf5ec51efbec4/WhatsApp%20Image%202025-10-27%20at%2015.20.45.jpeg"
   },
 ];
 
@@ -72,7 +72,7 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
             src={imageUrl}
             alt={imageDescription}
             fill
-            className={`object-cover ${name === 'Pilates' ? 'object-[50%_80%]' : ''}`}
+            className="object-cover"
             data-ai-hint={imageHint}
           />
         </div>
