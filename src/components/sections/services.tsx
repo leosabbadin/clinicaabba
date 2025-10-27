@@ -60,7 +60,7 @@ function ServiceCard({ name, description, icon: Icon, imageId }: { name: string;
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
       {image && (
-        <div className="relative h-48 w-full">
+        <div className="relative h-64 w-full">
           <Image
             src={image.imageUrl}
             alt={image.description}
