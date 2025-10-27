@@ -8,9 +8,9 @@ import { Menu } from "lucide-react";
 import Logo from "@/components/logo";
 
 const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Location", href: "#location" },
+  { label: "Serviços", href: "#services" },
+  { label: "Depoimentos", href: "#testimonials" },
+  { label: "Localização", href: "#location" },
 ];
 
 export default function Header() {
@@ -59,14 +59,14 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:flex">
             <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-              Book a Consultation
+              Agende uma Consulta
             </Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
                 <Menu className="h-4 w-4" />
-                <span className="sr-only">Open menu</span>
+                <span className="sr-only">Abrir menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
@@ -82,7 +82,7 @@ export default function Header() {
                 ))}
                  <Button asChild className="w-full">
                   <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-                    Book a Consultation
+                    Agende uma Consulta
                   </Link>
                 </Button>
               </nav>

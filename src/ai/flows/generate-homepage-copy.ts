@@ -13,14 +13,14 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const GenerateHomePageCopyInputSchema = z.object({
-  prompt: z.string().describe('A prompt describing the desired homepage copy.'),
+  prompt: z.string().describe('Um prompt descrevendo o texto desejado para a página inicial.'),
 });
 export type GenerateHomePageCopyInput = z.infer<
   typeof GenerateHomePageCopyInputSchema
 >;
 
 const GenerateHomePageCopyOutputSchema = z.object({
-  copy: z.string().describe('The generated homepage copy.'),
+  copy: z.string().describe('O texto gerado para a página inicial.'),
 });
 export type GenerateHomePageCopyOutput = z.infer<
   typeof GenerateHomePageCopyOutputSchema
@@ -36,7 +36,7 @@ const generateHomePageCopyPrompt = ai.definePrompt({
   name: 'generateHomePageCopyPrompt',
   input: {schema: GenerateHomePageCopyInputSchema},
   output: {schema: GenerateHomePageCopyOutputSchema},
-  prompt: `You are a marketing expert specializing in creating engaging homepage copy for physiotherapy clinics. Generate compelling homepage introduction copy based on the following prompt: {{{prompt}}}.`,
+  prompt: `Você é um especialista em marketing especializado em criar textos envolventes para a página inicial de clínicas de fisioterapia. Gere uma introdução atraente para a página inicial com base no seguinte prompt: {{{prompt}}}.`,
 });
 
 const generateHomePageCopyFlow = ai.defineFlow(
@@ -47,7 +47,7 @@ const generateHomePageCopyFlow = ai.defineFlow(
   },
   async input => {
     if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === 'YOUR_GEMINI_API_KEY') {
-      return { copy: "Welcome to Abba Digital Physio. We're here to help you on your path to recovery and wellness. Our expert team provides personalized care to help you regain mobility and live pain-free." };
+      return { copy: "Bem-vindo à Abba Digital Physio.\n\nEstamos aqui para ajudá-lo em seu caminho para a recuperação e bem-estar. Nossa equipe de especialistas oferece cuidados personalizados para ajudá-lo a recuperar a mobilidade e a viver sem dor." };
     }
     const {output} = await generateHomePageCopyPrompt(input);
     return output!;

@@ -23,7 +23,7 @@ export default function WhatsAppFAB() {
       asChild
       size="icon"
       className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-primary shadow-lg transition-transform hover:scale-110"
-      aria-label="Contact us on WhatsApp"
+      aria-label="Contate-nos no WhatsApp"
     >
       <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
         <WhatsAppIcon />

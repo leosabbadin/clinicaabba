@@ -6,32 +6,32 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const servicesList = [
   {
-    name: "Sports Injury Rehabilitation",
+    name: "Reabilitação de Lesões Esportivas",
     icon: Medal,
     imageId: "sports-injury"
   },
   {
-    name: "Post-Operative Care",
+    name: "Cuidados Pós-Operatórios",
     icon: Activity,
     imageId: "post-operative"
   },
   {
-    name: "Chronic Pain Management",
+    name: "Gerenciamento de Dor Crônica",
     icon: HeartPulse,
     imageId: "chronic-pain"
   },
   {
-    name: "Neurological Rehabilitation",
+    name: "Reabilitação Neurológica",
     icon: BrainCircuit,
     imageId: "neurological"
   },
   {
-    name: "Geriatric Physiotherapy",
+    name: "Fisioterapia Geriátrica",
     icon: PersonStanding,
     imageId: "geriatric"
   },
   {
-    name: "Pediatric Physiotherapy",
+    name: "Fisioterapia Pediátrica",
     icon: Baby,
     imageId: "pediatric"
   },
@@ -72,9 +72,9 @@ export default function Services() {
     <section id="services" className="w-full bg-accent/50 py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="text-center">
-          <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Services</h2>
+          <h2 className="font-headline text-3xl font-bold md:text-4xl">Nossos Serviços</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-            We offer a comprehensive range of specialized physiotherapy services tailored to your individual needs.
+            Oferecemos uma gama completa de serviços de fisioterapia especializados, adaptados às suas necessidades individuais.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

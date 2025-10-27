@@ -8,7 +8,7 @@ const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 
 export default async function Hero() {
   const { copy } = await generateHomePageCopy({
-    prompt: "Create a welcoming and reassuring message for a physiotherapy clinic's homepage. Emphasize personalized care, expert treatment, and a commitment to helping patients regain mobility and live pain-free.",
+    prompt: "Crie uma mensagem de boas-vindas acolhedora e tranquilizadora para a página inicial de uma clínica de fisioterapia. Enfatize o cuidado personalizado, o tratamento especializado e o compromisso em ajudar os pacientes a recuperar a mobilidade e viver sem dor.",
   });
   const [headline, ...paragraphs] = copy.split('\n\n');
 
@@ -36,11 +36,11 @@ export default async function Hero() {
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-                Book a Consultation
+                Agende uma Consulta
               </Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <Link href="#services">Our Services</Link>
+              <Link href="#services">Nossos Serviços</Link>
             </Button>
           </div>
         </div>

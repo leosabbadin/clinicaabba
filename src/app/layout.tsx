@@ -7,7 +7,7 @@ import WhatsAppFAB from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
   title: 'Abba Digital Physio',
-  description: 'Your path to recovery and wellness starts here.',
+  description: 'Seu caminho para a recuperação e bem-estar começa aqui.',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

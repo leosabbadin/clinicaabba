@@ -7,17 +7,17 @@ const testimonialsList = [
     {
         name: "Sarah L.",
         avatar: "S",
-        fullText: "After my knee surgery, I was worried I'd never get back to my active lifestyle. The team at Abba Digital Physio was incredible. They created a personalized recovery plan that was challenging but manageable. Their encouragement and expertise were instrumental in my recovery. Today, I'm back to hiking and running, something I thought was impossible a few months ago. I can't thank them enough for their support and for giving me my life back.",
+        fullText: "Após minha cirurgia no joelho, fiquei preocupada em nunca mais voltar ao meu estilo de vida ativo. A equipe da Abba Digital Physio foi incrível. Eles criaram um plano de recuperação personalizado que foi desafiador, mas administrável. O incentivo e a experiência deles foram fundamentais na minha recuperação. Hoje, estou de volta às caminhadas e corridas, algo que eu achava impossível alguns meses atrás. Não tenho como agradecer o suficiente pelo apoio e por me darem minha vida de volta.",
     },
     {
         name: "Michael B.",
         avatar: "M",
-        fullText: "I've been dealing with chronic back pain for years and had almost given up hope. A friend recommended Abba Digital Physio, and it has been a game-changer. They didn't just treat the symptoms; they took the time to understand the root cause of my pain. Through a combination of manual therapy, targeted exercises, and education on posture, my pain has significantly decreased. I feel more in control of my body than ever before.",
+        fullText: "Lido com dores crônicas nas costas há anos e quase perdi as esperanças. Um amigo me recomendou a Abba Digital Physio, e foi uma virada de jogo. Eles não trataram apenas os sintomas; eles dedicaram tempo para entender a causa raiz da minha dor. Através de uma combinação de terapia manual, exercícios direcionados e educação sobre postura, minha dor diminuiu significativamente. Sinto-me mais no controle do meu corpo do que nunca.",
     },
     {
         name: "Emily C.",
         avatar: "E",
-        fullText: "The physiotherapists here are not only highly skilled but also incredibly compassionate. As a new mother, I was struggling with postpartum back pain. They provided a safe and supportive environment for my treatment and even gave me exercises I could do at home with my baby. Their holistic approach to wellness is truly commendable. I highly recommend their services to any new parent.",
+        fullText: "Os fisioterapeutas aqui não são apenas altamente qualificados, mas também incrivelmente compassivos. Como mãe de primeira viagem, eu estava com dores nas costas pós-parto. Eles proporcionaram um ambiente seguro e de apoio para o meu tratamento e até me deram exercícios que eu poderia fazer em casa com meu bebê. A abordagem holística deles para o bem-estar é verdadeiramente louvável. Recomendo muito seus serviços para qualquer nova mãe.",
     },
 ];
 
@@ -37,7 +37,7 @@ async function TestimonialCard({ name, avatar, fullText }: { name: string; avata
                     </Avatar>
                     <div>
                         <p className="font-semibold">{name}</p>
-                        <p className="text-sm text-muted-foreground">Verified Patient</p>
+                        <p className="text-sm text-muted-foreground">Paciente Verificado</p>
                     </div>
                 </div>
             </CardContent>
@@ -50,9 +50,9 @@ export default function Testimonials() {
     <section id="testimonials" className="w-full bg-background py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="text-center">
-          <h2 className="font-headline text-3xl font-bold md:text-4xl">What Our Patients Say</h2>
+          <h2 className="font-headline text-3xl font-bold md:text-4xl">O Que Nossos Pacientes Dizem</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-            Real stories from people we've helped on their journey to recovery.
+            Histórias reais de pessoas que ajudamos em sua jornada para a recuperação.
           </p>
         </div>
         <div className="mt-12">

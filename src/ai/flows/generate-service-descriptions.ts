@@ -12,12 +12,12 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const GenerateServiceDescriptionsInputSchema = z.object({
-  serviceName: z.string().describe('The name of the physiotherapy service.'),
+  serviceName: z.string().describe('O nome do serviço de fisioterapia.'),
 });
 export type GenerateServiceDescriptionsInput = z.infer<typeof GenerateServiceDescriptionsInputSchema>;
 
 const GenerateServiceDescriptionsOutputSchema = z.object({
-  serviceDescription: z.string().describe('A compelling description of the physiotherapy service.'),
+  serviceDescription: z.string().describe('Uma descrição atraente do serviço de fisioterapia.'),
 });
 export type GenerateServiceDescriptionsOutput = z.infer<typeof GenerateServiceDescriptionsOutputSchema>;
 
@@ -29,7 +29,7 @@ const prompt = ai.definePrompt({
   name: 'generateServiceDescriptionsPrompt',
   input: {schema: GenerateServiceDescriptionsInputSchema},
   output: {schema: GenerateServiceDescriptionsOutputSchema},
-  prompt: `You are a marketing expert for a physiotherapy clinic. Generate a compelling and informative description for the following service: {{{serviceName}}}. The description should be approximately 100-150 words. Focus on the benefits to the patient and use language that is easy to understand. Highlight how this service can improve their quality of life and overall well-being.`,
+  prompt: `Você é um especialista em marketing para uma clínica de fisioterapia. Gere uma descrição atraente e informativa para o seguinte serviço: {{{serviceName}}}. A descrição deve ter aproximadamente 100-150 palavras. Foque nos benefícios para o paciente e use uma linguagem de fácil compreensão. Destaque como este serviço pode melhorar sua qualidade de vida e bem-estar geral.`,
 });
 
 const generateServiceDescriptionsFlow = ai.defineFlow(
@@ -40,7 +40,7 @@ const generateServiceDescriptionsFlow = ai.defineFlow(
   },
   async input => {
      if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === 'YOUR_GEMINI_API_KEY') {
-      return { serviceDescription: `Our ${input.serviceName} service is designed to provide the highest quality of care. We focus on evidence-based treatments to help you achieve your goals and improve your well-being.` };
+      return { serviceDescription: `Nosso serviço de ${input.serviceName} foi projetado para fornecer a mais alta qualidade de atendimento. Focamos em tratamentos baseados em evidências para ajudá-lo a alcançar seus objetivos e melhorar seu bem-estar.` };
     }
     const {output} = await prompt(input);
     return output!;

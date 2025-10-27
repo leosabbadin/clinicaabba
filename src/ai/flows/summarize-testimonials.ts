@@ -12,13 +12,13 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const SummarizeTestimonialsInputSchema = z.object({
-  testimonial: z.string().describe('The full text of the patient testimonial.'),
+  testimonial: z.string().describe('O texto completo do depoimento do paciente.'),
 });
 
 export type SummarizeTestimonialsInput = z.infer<typeof SummarizeTestimonialsInputSchema>;
 
 const SummarizeTestimonialsOutputSchema = z.object({
-  summary: z.string().describe('A concise summary of the testimonial highlighting key benefits.'),
+  summary: z.string().describe('Um resumo conciso do depoimento, destacando os principais benefícios.'),
 });
 
 export type SummarizeTestimonialsOutput = z.infer<typeof SummarizeTestimonialsOutputSchema>;
@@ -31,9 +31,9 @@ const summarizeTestimonialsPrompt = ai.definePrompt({
   name: 'summarizeTestimonialsPrompt',
   input: {schema: SummarizeTestimonialsInputSchema},
   output: {schema: SummarizeTestimonialsOutputSchema},
-  prompt: `Summarize the following patient testimonial, highlighting the key benefits and positive aspects mentioned. Keep the summary concise and easy to read.
+  prompt: `Resuma o seguinte depoimento de paciente, destacando os principais benefícios e aspectos positivos mencionados. Mantenha o resumo conciso e de fácil leitura.
 
-Testimonial: {{{testimonial}}}`,
+Depoimento: {{{testimonial}}}`,
 });
 
 const summarizeTestimonialsFlow = ai.defineFlow(

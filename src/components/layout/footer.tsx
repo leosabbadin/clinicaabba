@@ -3,9 +3,9 @@ import Logo from "@/components/logo";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 
 const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Location", href: "#location" },
+  { label: "Serviços", href: "#services" },
+  { label: "Depoimentos", href: "#testimonials" },
+  { label: "Localização", href: "#location" },
 ];
 
 export default function Footer() {
@@ -18,12 +18,12 @@ export default function Footer() {
             <span className="font-headline text-lg font-semibold">Abba Digital Physio</span>
           </Link>
           <p className="text-sm text-muted-foreground">
-            Dedicated to your recovery and wellness.
+            Dedicados à sua recuperação e bem-estar.
           </p>
         </div>
 
         <div className="md:col-start-3">
-          <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
+          <h3 className="font-headline text-lg font-semibold">Links Rápidos</h3>
           <ul className="mt-4 space-y-2">
             {navItems.map((item) => (
               <li key={item.label}>
@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="font-headline text-lg font-semibold">Connect</h3>
+          <h3 className="font-headline text-lg font-semibold">Conecte-se</h3>
           <div className="mt-4 flex space-x-4">
             <Link href="#" className="text-muted-foreground transition-colors hover:text-primary" aria-label="Facebook">
               <Facebook size={20} />
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
       <div className="container mx-auto mt-8 max-w-7xl border-t px-4 pt-8">
         <p className="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Abba Digital Physio. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Abba Digital Physio. Todos os direitos reservados.
         </p>
       </div>
     </footer>
