@@ -1,4 +1,3 @@
-import { summarizeTestimonials } from "@/ai/flows/summarize-testimonials";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -21,14 +20,12 @@ const testimonialsList = [
     },
 ];
 
-async function TestimonialCard({ name, avatar, fullText }: { name: string; avatar: string; fullText: string; }) {
-    const { summary } = await summarizeTestimonials({ testimonial: fullText });
-
+function TestimonialCard({ name, avatar, fullText }: { name: string; avatar: string; fullText: string; }) {
     return (
         <Card className="h-full">
             <CardContent className="flex h-full flex-col justify-between p-6">
                 <blockquote className="text-muted-foreground">
-                    "{summary}"
+                    "{fullText}"
                 </blockquote>
                 <div className="mt-6 flex items-center gap-4">
                     <Avatar>
