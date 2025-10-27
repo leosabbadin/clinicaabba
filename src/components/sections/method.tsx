@@ -1,0 +1,69 @@
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Stethoscope, Users, HeartHandshake } from "lucide-react";
+
+const features = [
+  {
+    icon: Stethoscope,
+    title: "Avaliação Precisa",
+    description: "Investigamos a fundo para entender a origem do problema.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Atendimento Humanizado",
+    description: "Um ambiente acolhedor onde você se sente seguro e ouvido.",
+  },
+  {
+    icon: Users,
+    title: "Profissionais Qualificados",
+    description: "Equipe em constante atualização e comprometida com as melhores práticas.",
+  },
+];
+
+const methodImage = PlaceHolderImages.find(p => p.id === 'method-therapist');
+
+export default function Method() {
+  return (
+    <section id="method" className="w-full bg-background py-16 md:py-24">
+      <div className="container mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 md:grid-cols-2">
+        <div className="order-2 md:order-1">
+          <h2 className="font-headline text-3xl font-bold md:text-4xl">
+            Mais que Fisioterapia. Um Cuidado que Acolhe.
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            O nome "Abba" vem do aramaico e significa "Pai", uma expressão de intimidade, confiança e cuidado. Essa é a base da nossa filosofia.
+          </p>
+          <p className="mt-4 text-muted-foreground">
+            Nossa missão é promover um serviço inigualável, onde a excelência profissional encontra os valores éticos e cristãos. Aqui, você não é apenas um paciente; vemos você como um todo, cuidando do seu bem-estar físico, emocional e espiritual.
+          </p>
+          <div className="mt-8 space-y-6">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-accent text-primary">
+                  <feature.icon className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold">{feature.title}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="order-1 md:order-2">
+          {methodImage && (
+            <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-xl md:h-[500px]">
+              <Image
+                src={methodImage.imageUrl}
+                alt={methodImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={methodImage.imageHint}
+              />
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
