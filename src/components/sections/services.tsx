@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HeartPulse, Medal, PersonStanding, Activity, Shield, Dumbbell, Bone } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const servicesList = [
   {
@@ -106,6 +108,13 @@ export default function Services() {
           {servicesList.map((service) => (
             <ServiceCard key={service.name} {...service} />
           ))}
+        </div>
+        <div className="mt-12 text-center">
+            <Button asChild size="lg">
+                <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                Agende uma Consulta
+                </Link>
+            </Button>
         </div>
       </div>
     </section>
