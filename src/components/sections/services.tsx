@@ -72,7 +72,7 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
             src={imageUrl}
             alt={imageDescription}
             fill
-            className={`object-cover ${name === 'Pilates' ? 'object-center' : ''}`}
+            className={`object-cover ${name === 'Pilates' ? 'object-[50%_60%]' : ''}`}
             data-ai-hint={imageHint}
           />
         </div>
