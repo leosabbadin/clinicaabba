@@ -1,44 +1,54 @@
-import { generateServiceDescriptions } from "@/ai/flows/generate-service-descriptions";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Baby, BrainCircuit, HeartPulse, Medal, PersonStanding, Activity } from "lucide-react";
+import { HeartPulse, Medal, PersonStanding, Activity, Shield, Dumbbell, Bone } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const servicesList = [
   {
-    name: "Reabilitação de Lesões Esportivas",
-    icon: Medal,
-    imageId: "sports-injury"
-  },
-  {
-    name: "Cuidados Pós-Operatórios",
-    icon: Activity,
-    imageId: "post-operative"
-  },
-  {
-    name: "Gerenciamento de Dor Crônica",
+    name: "Fisioterapia Especializada (Dores Crônicas e Agudas)",
+    description: "Avaliação precisa e tratamento focado em dores crônicas e agudas. Identificamos a causa para recuperar sua função e eliminar a dor.",
     icon: HeartPulse,
     imageId: "chronic-pain"
   },
   {
-    name: "Reabilitação Neurológica",
-    icon: BrainCircuit,
+    name: "Pré e Pós-Operatório",
+    description: "Cuidado completo da avaliação à alta. Aceleramos sua recuperação funcional pós-cirurgia (coluna, joelho, ombro) e traumas ortopédicos.",
+    icon: Activity,
+    imageId: "post-operative"
+  },
+  {
+    name: "Osteopatia",
+    description: "Terapia manual focada na causa raiz do desequilíbrio corporal. Restauramos a mobilidade e aliviamos a dor tratando o corpo de forma integrada.",
+    icon: Bone,
     imageId: "neurological"
   },
   {
-    name: "Fisioterapia Geriátrica",
-    icon: PersonStanding,
+    name: "Quiropraxia",
+    description: "Ajustes precisos na coluna e articulações para restaurar o alinhamento. Alívio rápido da dor, correção de tensões e aumento da mobilidade.",
+    icon: Shield,
     imageId: "geriatric"
   },
   {
-    name: "Fisioterapia Pediátrica",
-    icon: Baby,
+    name: "Fisioterapia Esportiva",
+    description: "Foco na prevenção de lesões e reabilitação de atletas. Retorne ao esporte com mais segurança, força e performance, seja amador ou profissional.",
+    icon: Medal,
+    imageId: "sports-injury"
+  },
+  {
+    name: "RPG (Reeducação Postural Global)",
+    description: "Método global para correção de desequilíbrios musculares e alívio de dores estruturais. Ajuste sua postura e melhore sua consciência corporal.",
+    icon: PersonStanding,
     imageId: "pediatric"
+  },
+  {
+    name: "Pilates",
+    description: "Ferramenta de reabilitação e bem-estar com acompanhamento profissional. Fortaleça o core, ganhe flexibilidade e consciência corporal.",
+    icon: Dumbbell,
+    imageId: "method-therapist"
   },
 ];
 
-async function ServiceCard({ name, icon: Icon, imageId }: { name: string; icon: React.ElementType; imageId: string; }) {
-  const { serviceDescription } = await generateServiceDescriptions({ serviceName: name });
+function ServiceCard({ name, description, icon: Icon, imageId }: { name: string; description: string; icon: React.ElementType; imageId: string; }) {
   const image = PlaceHolderImages.find(p => p.id === imageId);
 
   return (
@@ -61,7 +71,7 @@ async function ServiceCard({ name, icon: Icon, imageId }: { name: string; icon: 
         <CardTitle className="font-headline text-xl">{name}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-sm text-muted-foreground">{serviceDescription}</p>
+        <p className="text-sm text-muted-foreground">{description}</p>
       </CardContent>
     </Card>
   );
@@ -79,7 +89,7 @@ export default function Services() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {servicesList.map((service) => (
-            <ServiceCard key={service.name} name={service.name} icon={service.icon} imageId={service.imageId} />
+            <ServiceCard key={service.name} {...service} />
           ))}
         </div>
       </div>
