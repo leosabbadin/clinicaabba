@@ -47,6 +47,12 @@
       "description": "A compassionate physiotherapist attending to a patient with care.",
       "imageUrl": "https://images.unsplash.com/photo-1618010302683-6f79aaa9830b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJpbmclMjB0aGVyYXBpc3R8ZW58MHx8fHwxNzYxNTc1MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "caring therapist"
+    },
+    {
+      "id": "map-location",
+      "description": "A stylized map showing a pin on a location.",
+      "imageUrl": "https://images.unsplash.com/photo-1569336415962-a42945a473ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBsb2NhdGlvbnxlbnwwfHx8fDE3NjE1NzgwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map location"
     }
   ]
 }

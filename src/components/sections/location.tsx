@@ -1,5 +1,10 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import LocationMap from "../location-map";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+
+const mapImage = PlaceHolderImages.find(p => p.id === 'map-location');
 
 export default function Location() {
   return (
@@ -52,8 +57,24 @@ export default function Location() {
             </ul>
           </div>
         </div>
-        <div className="h-96 w-full md:h-full">
-          <LocationMap />
+        <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-md md:h-full">
+          {mapImage && (
+            <Image
+              src={mapImage.imageUrl}
+              alt={mapImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={mapImage.imageHint}
+            />
+          )}
+           <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+            <Button asChild size="lg">
+              <Link href="https://maps.app.goo.gl/4rXjTBQ3cX2HgkED6?g_st=ipc" target="_blank" rel="noopener noreferrer">
+                <MapPin className="mr-2 h-5 w-5" />
+                Ver no Google Maps
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
