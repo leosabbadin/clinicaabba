@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HeartPulse, Medal, PersonStanding, Activity, Shield, Dumbbell, Bone } from "lucide-react";
 import Image from "next/image";
@@ -114,7 +115,7 @@ export default function Services() {
         <div className="mt-12 text-center">
             <Button asChild size="lg">
                 <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-                Agende uma Consulta
+                AGENDAR MINHA AVALIAÇÃO
                 </Link>
             </Button>
         </div>
