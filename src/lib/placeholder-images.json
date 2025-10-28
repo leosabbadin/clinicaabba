@@ -9,7 +9,7 @@
     {
       "id": "sports-injury",
       "description": "Physiotherapist working with a football player.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/5a1985115891289c205c6764ac15134ae149c12b/IMG_1759.jpg",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759.jpg",
       "imageHint": "sports physiotherapy"
     },
     {
@@ -33,13 +33,13 @@
     {
       "id": "chiropractic",
       "description": "A chiropractor adjusting a patient's back.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg",
       "imageHint": "chiropractic adjustment"
     },
     {
       "id": "pediatric",
       "description": "A child playing with therapeutic toys during a physiotherapy session.",
-      "imageUrl": "https://images.unsplash.com/photo-1685362158423-abf004b858d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZCUyMHRoZXJhcHl8ZW58MHx8fHwxNzYxNTcxMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg",
       "imageHint": "child therapy"
     },
     {
