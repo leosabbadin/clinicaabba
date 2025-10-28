@@ -114,7 +114,7 @@ export default function Services() {
           ))}
         </div>
         <div className="mt-12 text-center">
-            <Button asChild size="lg">
+            <Button asChild size="lg" style={{ backgroundColor: '#25D366' }}>
                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 AGENDAR MINHA AVALIAÇÃO
                 </Link>

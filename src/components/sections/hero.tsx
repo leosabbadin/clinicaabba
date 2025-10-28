@@ -33,7 +33,7 @@ export default function Hero() {
             {subtitle}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg">
+            <Button asChild size="lg" style={{ backgroundColor: '#25D366' }}>
               <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 QUERO ALIVIAR MINHA DOR AGORA
               </Link>
