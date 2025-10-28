@@ -39,7 +39,7 @@ export default function Method() {
           <p className="mt-4 text-muted-foreground">
             Nossa missão é promover um serviço inigualável, onde a excelência profissional encontra os valores éticos e cristãos. Aqui, você não é apenas um paciente; vemos você como um todo, cuidando do seu bem-estar físico, emocional e espiritual.
           </p>
-          <Button asChild className="mt-6" style={{ backgroundColor: '#25D366' }}>
+          <Button asChild className="mt-6" style={{ backgroundColor: '#1EAE5F' }}>
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               INICIAR TRATAMENTO AGORA
             </Link>
