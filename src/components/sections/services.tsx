@@ -12,28 +12,28 @@ const servicesList = [
     description: "Avaliação precisa e tratamento focado na recuperação funcional de traumas ortopédicos e disfunções, utilizando as melhores práticas para sua reabilitação.",
     icon: HeartPulse,
     imageId: "chronic-pain",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/71ae8d26bcfab9960c58f734435c9ea22688145c/Fisioterapia%20preventiva%20.jpg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/Fisioterapia%20preventiva%20.jpg"
   },
   {
     name: "Dores Crônicas e Agudas",
     description: "Abordagem terapêutica para o tratamento de condições agudas e crônicas, visando o alívio da dor e a restauração do seu bem-estar.",
     icon: HeartPulse,
     imageId: "chronic-pain",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/5c602a83f266f94796180f0eee55c7b55976390e/IMG_1749.jpg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1749.jpg"
   },
   {
     name: "Fisioterapia no Pré e Pós-Operatório",
     description: "Acompanhamento completo, da avaliação à alta, para acelerar a recuperação funcional de cirurgias e traumas ortopédicos de coluna, joelho, ombro e mais.",
     icon: Activity,
     imageId: "post-operative",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/57cbe6b54d12323d54723459acf9f2f31cf00fab/WhatsApp%20Image%202025-10-27%20at%2016.34.36.jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2016.34.36.jpeg"
   },
   {
     name: "Fisioterapia Esportiva",
     description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
     icon: Medal,
     imageId: "sports-injury",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/5a1985115891289c205c6764ac15134ae149c12b/IMG_1759.jpg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759.jpg"
   },
   {
     name: "Osteopatia",
@@ -46,21 +46,21 @@ const servicesList = [
     description: "Ajustes precisos na coluna e articulações para alívio imediato da dor, correção de desalinhamentos e melhora da função do sistema nervoso.",
     icon: Shield,
     imageId: "chiropractic",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg"
   },
   {
     name: "RPG (Reeducação Postural Global)",
     description: "Método de correção postural que trata desequilíbrios musculares de forma global, aliviando dores estruturais e melhorando a consciência corporal.",
     icon: PersonStanding,
     imageId: "pediatric",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/57cbe6b54d12323d54723459acf9f2f31cf00fab/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg"
   },
   {
     name: "Pilates",
     description: "Serviço focado no fortalecimento do core, flexibilidade e controle corporal. Promove bem-estar e qualidade de vida através de exercícios supervisionados.",
     icon: Dumbbell,
     imageId: "method-therapist",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/41b5d48745af26d851740018012bf5ec51efbec4/WhatsApp%20Image%202025-10-27%20at%2015.20.45.jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.20.45.jpeg"
   },
 ];
 
@@ -72,7 +72,7 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
 
 
   return (
-    <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+    <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1 bg-card text-card-foreground">
       {imageUrl && (
         <div className="relative h-[400px] w-full">
           <Image
