@@ -54,7 +54,7 @@ export default function Footer() {
       </div>
       <div className="container mx-auto mt-8 max-w-7xl border-t border-card-foreground/20 px-4 pt-8">
         <p className="text-center text-sm text-card-foreground/60">
-          &copy; {new Date().getFullYear()} Abba Physio. Todos os direitos reservados.
+          &copy; 2025 Abba Fisioterapia Integrada. Todos os direitos reservados.
         </p>
       </div>
     </footer>
