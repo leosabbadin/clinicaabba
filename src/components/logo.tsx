@@ -1,21 +1,14 @@
+import Image from "next/image";
 import type { SVGProps } from 'react';
 
 export default function Logo(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-8 w-auto text-primary"
-      {...props}
-    >
-      <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
-      <path d="M12 8v8" />
-      <path d="M8 12h8" />
-    </svg>
+    <Image
+      src="https://raw.githubusercontent.com/leosabbadin/imagem-abba/593d08e00bbd17757eb8206804b9a41a6afa60e9/Screenshot%20(31)%20(1).png"
+      alt="Abba Digital Physio Logo"
+      width={100}
+      height={50}
+      className="h-10 w-auto"
+    />
   );
 }
