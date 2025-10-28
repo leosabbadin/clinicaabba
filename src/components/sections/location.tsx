@@ -41,9 +41,9 @@ export default function Location() {
             </Button>
         </div>
 
-        <div className="mt-12 rounded-lg border bg-card p-6 max-w-md mx-auto">
+        <div className="mt-12 rounded-lg border bg-card p-6 max-w-md mx-auto text-card-foreground">
             <h3 className="font-semibold">Horário de Funcionamento</h3>
-            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+            <ul className="mt-4 space-y-2 text-sm">
               <li className="flex justify-between"><span>Segunda a Sexta</span> <span>06:00 - 21:00</span></li>
             </ul>
         </div>
