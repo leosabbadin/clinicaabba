@@ -3,7 +3,6 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
-import WhatsAppFAB from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
   title: 'Abba Digital Physio',
@@ -27,7 +26,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <WhatsAppFAB />
         <Toaster />
       </body>
     </html>
