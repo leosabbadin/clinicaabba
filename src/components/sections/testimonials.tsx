@@ -6,12 +6,12 @@ const testimonialsList = [
     {
         name: "Sarah L.",
         avatar: "S",
-        fullText: "Após minha cirurgia no joelho, fiquei preocupada em nunca mais voltar ao meu estilo de vida ativo. A equipe da Abba Digital Physio foi incrível. Eles criaram um plano de recuperação personalizado que foi desafiador, mas administrável. O incentivo e a experiência deles foram fundamentais na minha recuperação. Hoje, estou de volta às caminhadas e corridas, algo que eu achava impossível alguns meses atrás. Não tenho como agradecer o suficiente pelo apoio e por me darem minha vida de volta.",
+        fullText: "Após minha cirurgia no joelho, fiquei preocupada em nunca mais voltar ao meu estilo de vida ativo. A equipe da Abba Physio foi incrível. Eles criaram um plano de recuperação personalizado que foi desafiador, mas administrável. O incentivo e a experiência deles foram fundamentais na minha recuperação. Hoje, estou de volta às caminhadas e corridas, algo que eu achava impossível alguns meses atrás. Não tenho como agradecer o suficiente pelo apoio e por me darem minha vida de volta.",
     },
     {
         name: "Michael B.",
         avatar: "M",
-        fullText: "Lido com dores crônicas nas costas há anos e quase perdi as esperanças. Um amigo me recomendou a Abba Digital Physio, e foi uma virada de jogo. Eles não trataram apenas os sintomas; eles dedicaram tempo para entender a causa raiz da minha dor. Através de uma combinação de terapia manual, exercícios direcionados e educação sobre postura, minha dor diminuiu significativamente. Sinto-me mais no controle do meu corpo do que nunca.",
+        fullText: "Lido com dores crônicas nas costas há anos e quase perdi as esperanças. Um amigo me recomendou a Abba Physio, e foi uma virada de jogo. Eles não trataram apenas os sintomas; eles dedicaram tempo para entender a causa raiz da minha dor. Através de uma combinação de terapia manual, exercícios direcionados e educação sobre postura, minha dor diminuiu significativamente. Sinto-me mais no controle do meu corpo do que nunca.",
     },
     {
         name: "Emily C.",
@@ -46,9 +46,9 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="w-full bg-background py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="text-center">
+        <div className="text-center text-foreground">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">O Que Nossos Pacientes Dizem</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+          <p className="mt-4 max-w-2xl mx-auto">
             Histórias reais de pessoas que ajudamos em sua jornada para a recuperação.
           </p>
         </div>
