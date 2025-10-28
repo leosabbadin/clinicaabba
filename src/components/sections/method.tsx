@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Stethoscope, Users, HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -24,7 +23,6 @@ const features = [
 
 export default function Method() {
     const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
-    const methodImage = PlaceHolderImages.find(p => p.id === 'method-therapist');
     
   return (
     <section id="method" className="w-full bg-background py-16 md:py-24">
@@ -59,17 +57,15 @@ export default function Method() {
           </div>
         </div>
         <div className="order-1 md:order-2">
-          {methodImage && (
             <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-xl md:h-[500px]">
               <Image
-                src={methodImage.imageUrl}
-                alt={methodImage.description}
+                src="https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-28%20at%2010.16.36.jpeg?raw=true"
+                alt="A compassionate physiotherapist attending to a patient with care."
                 fill
                 className="object-cover"
-                data-ai-hint={methodImage.imageHint}
+                data-ai-hint="caring therapist"
               />
             </div>
-          )}
         </div>
       </div>
     </section>

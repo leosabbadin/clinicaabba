@@ -3,62 +3,8 @@
     {
       "id": "hero-background",
       "description": "Fisioterapeuta aplicando técnica em paciente.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/593d08e00bbd17757eb8206804b9a41a6afa60e9/ABBA.jpg?raw=true",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/ABBA.jpg?raw=true",
       "imageHint": "physiotherapy session"
-    },
-    {
-      "id": "specialized-physiotherapy",
-      "description": "Fisioterapia preventiva",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/Fisioterapia%20preventiva%20.jpg?raw=true",
-      "imageHint": "preventive physiotherapy"
-    },
-    {
-      "id": "sports-injury",
-      "description": "Physiotherapist working with a football player.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759.jpg?raw=true",
-      "imageHint": "sports physiotherapy"
-    },
-    {
-      "id": "post-operative",
-      "description": "A patient doing guided exercises for post-operative recovery.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2016.34.36.jpeg?raw=true",
-      "imageHint": "patient recovery"
-    },
-    {
-      "id": "chronic-pain",
-      "description": "A person stretching their back, symbolizing relief from chronic pain.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1749.jpg?raw=true",
-      "imageHint": "person stretching"
-    },
-    {
-      "id": "osteopathy",
-      "description": "A therapist assisting a patient with balance and coordination exercises.",
-      "imageUrl": "https://images.unsplash.com/photo-1643300121645-83fe6b0f9315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXRpZW50JTIwdGhlcmFweXxlbnwwfHx8fDE3NjE1NzQ5NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "patient therapy"
-    },
-    {
-      "id": "chiropractic",
-      "description": "A chiropractor adjusting a patient's back.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg?raw=true",
-      "imageHint": "chiropractic adjustment"
-    },
-    {
-      "id": "pediatric",
-      "description": "A child playing with therapeutic toys during a physiotherapy session.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg?raw=true",
-      "imageHint": "child therapy"
-    },
-    {
-      "id": "pilates",
-      "description": "Pilates session in progress.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.20.45.jpeg?raw=true",
-      "imageHint": "pilates session"
-    },
-    {
-      "id": "method-therapist",
-      "description": "A compassionate physiotherapist attending to a patient with care.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-28%20at%2010.16.36.jpeg?raw=true",
-      "imageHint": "caring therapist"
     }
   ]
 }
