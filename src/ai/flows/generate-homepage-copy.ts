@@ -2,7 +2,7 @@
 
 /**
  * @fileOverview AI-powered copy generation for the homepage introduction. A Genkit flow which takes a
- * prompt as input, and returns marketing copy for the home page of the Abba Digital Physio clinic.
+ * prompt as input, and returns marketing copy for the home page of the Abba Physio clinic.
  *
  * @ExportedFunction generateHomePageCopy - Generates home page copy based on the given input.
  * @ExportedType GenerateHomePageCopyInput - The input type for the generateHomePageCopy function.
@@ -47,7 +47,7 @@ const generateHomePageCopyFlow = ai.defineFlow(
   },
   async input => {
     if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === 'YOUR_GEMINI_API_KEY') {
-      return { copy: "Bem-vindo à Abba Digital Physio.\n\nEstamos aqui para ajudá-lo em seu caminho para a recuperação e bem-estar. Nossa equipe de especialistas oferece cuidados personalizados para ajudá-lo a recuperar a mobilidade e a viver sem dor." };
+      return { copy: "Bem-vindo à Abba Physio.\n\nEstamos aqui para ajudá-lo em seu caminho para a recuperação e bem-estar. Nossa equipe de especialistas oferece cuidados personalizados para ajudá-lo a recuperar a mobilidade e a viver sem dor." };
     }
     const {output} = await generateHomePageCopyPrompt(input);
     return output!;

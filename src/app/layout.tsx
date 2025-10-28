@@ -6,7 +6,7 @@ import Footer from '@/components/layout/footer';
 import WhatsAppFab from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
-  title: 'Abba Digital Physio',
+  title: 'Abba Physio',
   description: 'Seu caminho para a recuperação e bem-estar começa aqui.',
 };
 

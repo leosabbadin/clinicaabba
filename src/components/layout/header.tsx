@@ -49,7 +49,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Logo />
           <span className="hidden font-headline text-xl font-semibold sm:inline-block">
-            Abba Digital Physio
+            Abba
           </span>
         </Link>
 

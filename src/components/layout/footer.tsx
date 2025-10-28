@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <Link href="/" className="flex items-center gap-2">
             <Logo />
-            <span className="font-headline text-lg font-semibold">Abba Digital Physio</span>
+            <span className="font-headline text-lg font-semibold">Abba</span>
           </Link>
           <p className="text-sm text-muted-foreground">
             Dedicados à sua recuperação e bem-estar.
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
       <div className="container mx-auto mt-8 max-w-7xl border-t px-4 pt-8">
         <p className="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Abba Digital Physio. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Abba Physio. Todos os direitos reservados.
         </p>
       </div>
     </footer>
