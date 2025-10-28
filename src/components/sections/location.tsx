@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -34,9 +34,7 @@ export default function Location() {
         <div className="mt-12 rounded-lg border bg-card p-6 max-w-md mx-auto">
             <h3 className="font-semibold">Horário de Funcionamento</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-              <li className="flex justify-between"><span>Segunda - Sexta</span> <span>9:00 - 19:00</span></li>
-              <li className="flex justify-between"><span>Sábado</span> <span>10:00 - 14:00</span></li>
-              <li className="flex justify-between"><span>Domingo</span> <span>Fechado</span></li>
+              <li className="flex justify-between"><span>Segunda a Sexta</span> <span>06:00 - 21:00</span></li>
             </ul>
         </div>
 
