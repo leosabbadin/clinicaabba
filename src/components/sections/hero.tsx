@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-                Agende uma Consulta
+                QUERO ALIVIAR MINHA DOR AGORA
               </Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
