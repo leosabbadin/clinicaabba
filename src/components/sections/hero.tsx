@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="relative h-[80svh] min-h-[500px] w-full">
       <Image
-          src="https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/Screenshot%20(31).png"
+          src="https://raw.githubusercontent.com/leosabbadin/imagem-abba/593d08e00bbd17757eb8206804b9a41a6afa60e9/ABBA.jpg"
           alt="Fisioterapeuta aplicando técnica em paciente."
           fill
           className="object-cover"
