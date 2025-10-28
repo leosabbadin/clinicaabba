@@ -17,7 +17,8 @@ const servicesList = [
     name: "Dores Crônicas e Agudas",
     description: "Abordagem terapêutica para o tratamento de condições agudas e crônicas, visando o alívio da dor e a restauração do seu bem-estar.",
     icon: HeartPulse,
-    imageId: "chronic-pain"
+    imageId: "chronic-pain",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg"
   },
   {
     name: "Fisioterapia no Pré e Pós-Operatório",
