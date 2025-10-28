@@ -15,6 +15,7 @@ const navItems = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +59,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:flex">
-            <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
+            <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               Agende uma Consulta
             </Link>
           </Button>
@@ -81,7 +82,7 @@ export default function Header() {
                   </Link>
                 ))}
                  <Button asChild className="w-full">
-                  <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
+                  <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                     Agende uma Consulta
                   </Link>
                 </Button>

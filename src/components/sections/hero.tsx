@@ -9,6 +9,7 @@ const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 export default function Hero() {
   const headline = "Chega de Viver com Limitações.";
   const subtitle = "Você encontrou a clínica certa. Nossa equipe de especialistas une tratamento avançado e cuidado humano para tirar você da crise e devolver seu movimento.";
+  const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
 
   return (
     <section className="relative h-[80svh] min-h-[500px] w-full">
@@ -33,7 +34,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
-              <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
+              <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 QUERO ALIVIAR MINHA DOR AGORA
               </Link>
             </Button>

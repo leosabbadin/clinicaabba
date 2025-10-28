@@ -98,6 +98,7 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
 }
 
 export default function Services() {
+    const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
   return (
     <section id="services" className="w-full bg-accent/50 py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4">
@@ -114,7 +115,7 @@ export default function Services() {
         </div>
         <div className="mt-12 text-center">
             <Button asChild size="lg">
-                <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
+                <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 AGENDAR MINHA AVALIAÇÃO
                 </Link>
             </Button>
