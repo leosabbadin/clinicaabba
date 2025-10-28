@@ -43,7 +43,7 @@ const servicesList = [
     name: "Osteopatia",
     description: "Terapia manual que investiga e trata a causa raiz da dor, buscando reequilibrar o corpo de forma integrada para restaurar a mobilidade.",
     icon: Bone,
-    imageUrl: "https://images.unsplash.com/photo-1643300121645-83fe6b0f9315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXRpZW50JTIwdGhlcmFweXxlbnwwfHx8fDE3NjE1NzQ5NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem/72780f330f4fb900569ae4c6ef58d9a350f7760a/WhatsApp%20Image%202025-10-28%20at%2014.22.58.jpeg",
     imageAlt: "A therapist assisting a patient with balance and coordination exercises."
   },
   {
