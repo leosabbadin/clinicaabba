@@ -1,9 +1,9 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HeartPulse, Medal, PersonStanding, Activity, Shield, Dumbbell, Bone } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const servicesList = [
   {
@@ -11,64 +11,64 @@ const servicesList = [
     name: "Fisioterapia Especializada",
     description: "Avaliação precisa e tratamento focado na recuperação funcional de traumas ortopédicos e disfunções, utilizando as melhores práticas para sua reabilitação.",
     icon: HeartPulse,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/Fisioterapia%20preventiva%20.jpg?raw=true",
-    imageAlt: "Fisioterapia preventiva"
+    imageUrl: "https://picsum.photos/seed/service1/600/400",
+    imageAlt: "Placeholder para Fisioterapia Especializada"
   },
   {
     id: "chronic-pain",
     name: "Dores Crônicas e Agudas",
     description: "Abordagem terapêutica para o tratamento de condições agudas e crônicas, visando o alívio da dor e a restauração do seu bem-estar.",
     icon: HeartPulse,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1749.jpg?raw=true",
-    imageAlt: "A person stretching their back, symbolizing relief from chronic pain."
+    imageUrl: "https://picsum.photos/seed/service2/600/400",
+    imageAlt: "Placeholder para Dores Crônicas e Agudas"
   },
   {
     id: "post-operative",
     name: "Fisioterapia no Pré e Pós-Operatório",
     description: "Acompanhamento completo, da avaliação à alta, para acelerar a recuperação funcional de cirurgias e traumas ortopédicos de coluna, joelho, ombro e mais.",
     icon: Activity,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2016.34.36.jpeg?raw=true",
-    imageAlt: "A patient doing guided exercises for post-operative recovery."
+    imageUrl: "https://picsum.photos/seed/service3/600/400",
+    imageAlt: "Placeholder para Fisioterapia no Pré e Pós-Operatório"
   },
   {
     id: "sports-injury",
     name: "Fisioterapia Esportiva",
     description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
     icon: Medal,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759.jpg?raw=true",
-    imageAlt: "Physiotherapist working with a football player."
+    imageUrl: "https://picsum.photos/seed/service4/600/400",
+    imageAlt: "Placeholder para Fisioterapia Esportiva"
   },
   {
     id: "osteopathy",
     name: "Osteopatia",
     description: "Terapia manual que investiga e trata a causa raiz da dor, buscando reequilibrar o corpo de forma integrada para restaurar a mobilidade.",
     icon: Bone,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem/72780f330f4fb900569ae4c6ef58d9a350f7760a/WhatsApp%20Image%202025-10-28%20at%2014.22.58.jpeg",
-    imageAlt: "A therapist assisting a patient with balance and coordination exercises."
+    imageUrl: "https://picsum.photos/seed/service5/600/400",
+    imageAlt: "Placeholder para Osteopatia"
   },
   {
     id: "chiropractic",
     name: "Quiropraxia",
     description: "Ajustes precisos na coluna e articulações para alívio imediato da dor, correção de desalinhamentos e melhora da função do sistema nervoso.",
     icon: Shield,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg?raw=true",
-    imageAlt: "A chiropractor adjusting a patient's back."
+    imageUrl: "https://picsum.photos/seed/service6/600/400",
+    imageAlt: "Placeholder para Quiropraxia"
   },
   {
     id: "pediatric",
     name: "RPG (Reeducação Postural Global)",
     description: "Método de correção postural que trata desequilíbrios musculares de forma global, aliviando dores estruturais e melhorando a consciência corporal.",
     icon: PersonStanding,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg?raw=true",
-    imageAlt: "A child playing with therapeutic toys during a physiotherapy session."
+    imageUrl: "https://picsum.photos/seed/service7/600/400",
+    imageAlt: "Placeholder para RPG"
   },
   {
     id: "pilates",
     name: "Pilates",
     description: "Serviço focado no fortalecimento do core, flexibilidade e controle corporal. Promove bem-estar e qualidade de vida através de exercícios supervisionados.",
     icon: Dumbbell,
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.20.45.jpeg?raw=true",
-    imageAlt: "Pilates session in progress."
+    imageUrl: "https://picsum.photos/seed/service8/600/400",
+    imageAlt: "Placeholder para Pilates"
   },
 ];
 

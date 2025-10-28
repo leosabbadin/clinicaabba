@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Stethoscope, Users, HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -59,7 +60,7 @@ export default function Method() {
         <div className="order-1 md:order-2">
             <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-xl md:h-[500px]">
               <Image
-                src="https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-28%20at%2010.16.36.jpeg?raw=true"
+                src="https://picsum.photos/seed/method/600/500"
                 alt="A compassionate physiotherapist attending to a patient with care."
                 fill
                 className="object-cover"
