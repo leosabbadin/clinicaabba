@@ -14,7 +14,7 @@ export default function Location() {
           Estamos convenientemente localizados para atendê-lo. Encontre-nos no endereço abaixo ou entre em contato para agendar sua consulta.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:max-w-3xl mx-auto">
           <div className="flex flex-col items-center gap-4">
             <MapPin className="h-8 w-8 text-primary" />
             <div className="text-center">
@@ -29,13 +29,6 @@ export default function Location() {
               <p className="text-muted-foreground transition-colors group-hover:text-primary">(62) 9 8602-5326</p>
             </div>
           </Link>
-          <div className="flex flex-col items-center gap-4">
-            <Mail className="h-8 w-8 text-primary" />
-            <div className="text-center">
-              <h3 className="text-lg font-semibold">Email</h3>
-              <p className="text-muted-foreground">contato@abbaphysio.digital</p>
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 rounded-lg border bg-card p-6 max-w-md mx-auto">
