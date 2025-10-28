@@ -91,7 +91,7 @@ function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customI
         <CardTitle className="font-headline text-xl">{name}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-sm text-muted-foreground">{description}</p>
+        <p className="text-sm text-card-foreground">{description}</p>
       </CardContent>
     </Card>
   );
