@@ -18,7 +18,7 @@ const servicesList = [
     description: "Abordagem terapêutica para o tratamento de condições agudas e crônicas, visando o alívio da dor e a restauração do seu bem-estar.",
     icon: HeartPulse,
     imageId: "chronic-pain",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/5c602a83f266f94796180f0eee55c7b55976390e/IMG_1749.jpg"
   },
   {
     name: "Fisioterapia no Pré e Pós-Operatório",
