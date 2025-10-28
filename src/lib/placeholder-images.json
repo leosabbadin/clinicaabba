@@ -1,12 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "Fisioterapeuta aplicando técnica em paciente.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/Screenshot%20(31).png",
-      "imageHint": "physiotherapy session"
-    },
-    {
       "id": "sports-injury",
       "description": "Physiotherapist working with a football player.",
       "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759.jpg",
