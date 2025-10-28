@@ -10,7 +10,8 @@ const servicesList = [
     name: "Fisioterapia Especializada",
     description: "Avaliação precisa e tratamento focado na recuperação funcional de traumas ortopédicos e disfunções, utilizando as melhores práticas para sua reabilitação.",
     icon: HeartPulse,
-    imageId: "chronic-pain"
+    imageId: "chronic-pain",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/71ae8d26bcfab9960c58f734435c9ea22688145c/Fisioterapia%20preventiva%20.jpg"
   },
   {
     name: "Dores Crônicas e Agudas",
