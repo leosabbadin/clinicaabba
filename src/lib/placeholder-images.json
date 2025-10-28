@@ -2,14 +2,14 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A calming view of a modern physiotherapy clinic interior with soft lighting and plants.",
-      "imageUrl": "https://images.unsplash.com/photo-1598448056086-307e98ef5c4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjE1Njc0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic interior"
+      "description": "Fisioterapeuta aplicando técnica em paciente.",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/3264f51e2a80cf9ad2433468ff82687f4dad0896/ABBA.jpg",
+      "imageHint": "physiotherapy session"
     },
     {
       "id": "sports-injury",
       "description": "Physiotherapist working with a football player.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/ef1ae7939ff782ab73dac838450f9bb019fb9d1a/WhatsApp%20Image%202025-10-27%20at%2015.39.39.jpeg",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/5a1985115891289c205c6764ac15134ae149c12b/IMG_1759.jpg",
       "imageHint": "sports physiotherapy"
     },
     {
