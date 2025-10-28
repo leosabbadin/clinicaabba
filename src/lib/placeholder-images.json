@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "Fisioterapeuta aplicando técnica em paciente.",
-      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/ABBA.jpg",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/Screenshot%20(31).png",
       "imageHint": "physiotherapy session"
     },
     {
@@ -15,13 +15,13 @@
     {
       "id": "post-operative",
       "description": "A patient doing guided exercises for post-operative recovery.",
-      "imageUrl": "https://images.unsplash.com/photo-1606166187734-a4cb74079037?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXRpZW50JTIwcmVjb3Zlcnl8ZW58MHx8fHwxNzYxNTMyMzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2016.34.36.jpeg",
       "imageHint": "patient recovery"
     },
     {
       "id": "chronic-pain",
       "description": "A person stretching their back, symbolizing relief from chronic pain.",
-      "imageUrl": "https://images.unsplash.com/photo-1758599879024-7379d769f664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBzdHJldGNoaW5nfGVufDB8fHx8MTc2MTUwMzkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1749.jpg",
       "imageHint": "person stretching"
     },
     {

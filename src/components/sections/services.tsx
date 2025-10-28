@@ -33,6 +33,7 @@ const servicesList = [
     description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
     icon: Medal,
     imageId: "sports-injury",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759.jpg"
   },
   {
     name: "Osteopatia",
@@ -45,12 +46,14 @@ const servicesList = [
     description: "Ajustes precisos na coluna e articulações para alívio imediato da dor, correção de desalinhamentos e melhora da função do sistema nervoso.",
     icon: Shield,
     imageId: "chiropractic",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2015.21.16.jpeg"
   },
   {
     name: "RPG (Reeducação Postural Global)",
     description: "Método de correção postural que trata desequilíbrios musculares de forma global, aliviando dores estruturais e melhorando a consciência corporal.",
     icon: PersonStanding,
     imageId: "pediatric",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/WhatsApp%20Image%202025-10-27%20at%2017.13.20.jpeg"
   },
   {
     name: "Pilates",
@@ -62,10 +65,10 @@ const servicesList = [
 ];
 
 function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customImageUrl }: { name: string; description: string; icon: React.ElementType; imageId: string; imageUrl?: string; }) {
-  const image = PlaceHolderImages.find(p => p.id === imageId);
-  const imageUrl = customImageUrl || image?.imageUrl;
-  const imageDescription = image?.description || name;
-  const imageHint = image?.imageHint || name.toLowerCase().split(' ').slice(0, 2).join(' ');
+  const placeholder = PlaceHolderImages.find(p => p.id === imageId);
+  const imageUrl = customImageUrl || placeholder?.imageUrl;
+  const imageDescription = placeholder?.description || name;
+  const imageHint = placeholder?.imageHint || name.toLowerCase().split(' ').slice(0, 2).join(' ');
 
 
   return (
