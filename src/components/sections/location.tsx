@@ -18,7 +18,7 @@ export default function Location() {
             <MapPin className="h-8 w-8 text-primary" />
             <div className="text-center">
               <h3 className="text-lg font-semibold">Endereço</h3>
-              <p className="text-muted-foreground">Avenida do Bem-Estar, 123, Lisboa, 1000-001, Portugal</p>
+              <p className="text-muted-foreground">Av. Ipanema N° 684 Quadra 3 Lote 14 jardim Atlântico - Goiânia</p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4">
