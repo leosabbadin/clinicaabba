@@ -31,7 +31,7 @@ const servicesList = [
     description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
     icon: Medal,
     imageId: "sports-injury",
-    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/main/IMG_1759%20(1).jpeg"
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagem-abba/5a1985115891289c205c6764ac15134ae149c12b/IMG_1759.jpg"
   },
   {
     name: "Osteopatia",
