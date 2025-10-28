@@ -2,22 +2,26 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function Hero() {
   const headline = "Chega de Viver com Limitações.";
   const subtitle = "Você encontrou a clínica certa. Nossa equipe de especialistas une tratamento avançado e cuidado humano para tirar você da crise e devolver seu movimento.";
   const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 
   return (
     <section className="relative h-[80svh] min-h-[500px] w-full">
-      <Image
-          src="https://raw.githubusercontent.com/leosabbadin/imagem-abba/593d08e00bbd17757eb8206804b9a41a6afa60e9/ABBA.jpg"
-          alt="Fisioterapeuta aplicando técnica em paciente."
+      {heroImage && (
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
           fill
           className="object-cover"
-          data-ai-hint="physiotherapy session"
+          data-ai-hint={heroImage.imageHint}
           priority
         />
+      )}
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
         <div className="container max-w-4xl px-4">
