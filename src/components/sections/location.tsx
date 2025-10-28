@@ -25,7 +25,7 @@ export default function Location() {
             <Phone className="h-8 w-8 text-primary" />
             <div className="text-center">
               <h3 className="text-lg font-semibold">Telefone</h3>
-              <p className="text-muted-foreground">62 98602-5326</p>
+              <p className="text-muted-foreground">(62) 9 8602-5326</p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4">
