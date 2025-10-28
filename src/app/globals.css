@@ -6,11 +6,11 @@
   :root {
     --background: 0 0% 96.1%; /* off-white (#F5F5F5) */
     --foreground: 224 71.4% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card: 98 21% 21%;
+    --card-foreground: 0 0% 98%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
-    --primary: 120 60% 34%; /* forest green (#228B22) */
+    --primary: 98 21% 21%; /* forest green (#33442a) */
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 93%;
     --secondary-foreground: 0 0% 9%;
