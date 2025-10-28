@@ -16,7 +16,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center gap-2">
             <Logo />
           </Link>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-card-foreground/80">
             Dedicados à sua recuperação e bem-estar.
           </p>
         </div>
