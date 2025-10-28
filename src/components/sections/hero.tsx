@@ -28,7 +28,7 @@ export default function Hero() {
           <h1 className="font-headline text-4xl font-bold leading-tight drop-shadow-md md:text-6xl">
             {headline}
           </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-primary-foreground/90 drop-shadow-sm md:text-xl">
+          <p className="mt-6 max-w-2xl mx-auto text-lg text-primary-foreground drop-shadow-md md:text-xl">
             {subtitle}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
