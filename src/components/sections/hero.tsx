@@ -1,4 +1,4 @@
-import { generateHomePageCopy } from "@/ai/flows/generate-homepage-copy";
+
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
@@ -6,11 +6,9 @@ import Link from "next/link";
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 
-export default async function Hero() {
-  const { copy } = await generateHomePageCopy({
-    prompt: "Crie uma mensagem de boas-vindas acolhedora e tranquilizadora para a página inicial de uma clínica de fisioterapia. Enfatize o cuidado personalizado, o tratamento especializado e o compromisso em ajudar os pacientes a recuperar a mobilidade e viver sem dor.",
-  });
-  const [headline, ...paragraphs] = copy.split('\n\n');
+export default function Hero() {
+  const headline = "Chega de Viver com Limitações.";
+  const subtitle = "Você encontrou a clínica certa. Nossa equipe de especialistas une tratamento avançado e cuidado humano para tirar você da crise e devolver seu movimento.";
 
   return (
     <section className="relative h-[80svh] min-h-[500px] w-full">
@@ -31,7 +29,7 @@ export default async function Hero() {
             {headline}
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-primary-foreground/90 drop-shadow-sm md:text-xl">
-            {paragraphs.join(' ')}
+            {subtitle}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
