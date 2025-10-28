@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="relative h-[80svh] min-h-[500px] w-full">
       <Image
-        src="https://picsum.photos/seed/hero/1200/800"
+        src="https://raw.githubusercontent.com/leosabbadin/imagemclinicaabba/71c44676fa42a8aa8a9c15f9c7ce5cb843c748b6/ABBA.png"
         alt="Fisioterapia"
         fill
         className="object-cover"

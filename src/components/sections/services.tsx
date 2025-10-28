@@ -11,7 +11,7 @@ const servicesList = [
     name: "Fisioterapia Especializada",
     description: "Avaliação precisa e tratamento focado na recuperação funcional de traumas ortopédicos e disfunções, utilizando as melhores práticas para sua reabilitação.",
     icon: HeartPulse,
-    imageUrl: "https://picsum.photos/seed/service1/600/400",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagemclinicaabba/71c44676fa42a8aa8a9c15f9c7ce5cb843c748b6/Fisioterapia%20preventiva%20.png",
     imageAlt: "Placeholder para Fisioterapia Especializada"
   },
   {
@@ -19,7 +19,7 @@ const servicesList = [
     name: "Dores Crônicas e Agudas",
     description: "Abordagem terapêutica para o tratamento de condições agudas e crônicas, visando o alívio da dor e a restauração do seu bem-estar.",
     icon: HeartPulse,
-    imageUrl: "https://picsum.photos/seed/service2/600/400",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagemclinicaabba/71c44676fa42a8aa8a9c15f9c7ce5cb843c748b6/IMG_1749.png",
     imageAlt: "Placeholder para Dores Crônicas e Agudas"
   },
   {
@@ -35,7 +35,7 @@ const servicesList = [
     name: "Fisioterapia Esportiva",
     description: "Foco na prevenção de lesões, reabilitação acelerada e otimização da performance de atletas, do amador ao profissional.",
     icon: Medal,
-    imageUrl: "https://picsum.photos/seed/service4/600/400",
+    imageUrl: "https://raw.githubusercontent.com/leosabbadin/imagemclinicaabba/71c44676fa42a8aa8a9c15f9c7ce5cb843c748b6/IMG_1759.png",
     imageAlt: "Placeholder para Fisioterapia Esportiva"
   },
   {
