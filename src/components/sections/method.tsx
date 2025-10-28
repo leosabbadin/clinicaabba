@@ -40,7 +40,7 @@ export default function Method() {
           </p>
           <Button asChild className="mt-6">
             <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-              Agende uma Consulta
+              INICIAR TRATAMENTO AGORA
             </Link>
           </Button>
           <div className="mt-8 space-y-6">
