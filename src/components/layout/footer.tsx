@@ -15,7 +15,6 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <Link href="/" className="flex items-center gap-2">
             <Logo />
-            <span className="font-headline text-lg font-semibold">Abba</span>
           </Link>
           <p className="text-sm text-muted-foreground">
             Dedicados à sua recuperação e bem-estar.

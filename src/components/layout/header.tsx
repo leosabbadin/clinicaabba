@@ -48,9 +48,6 @@ export default function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <Logo />
-          <span className="hidden font-headline text-xl font-semibold sm:inline-block">
-            Abba
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
