@@ -24,7 +24,7 @@ function TestimonialCard({ name, avatar, fullText }: { name: string; avatar: str
     return (
         <Card className="h-full">
             <CardContent className="flex h-full flex-col justify-between p-6">
-                <blockquote className="text-muted-foreground">
+                <blockquote className="text-card-foreground">
                     "{fullText}"
                 </blockquote>
                 <div className="mt-6 flex items-center gap-4">
@@ -34,7 +34,7 @@ function TestimonialCard({ name, avatar, fullText }: { name: string; avatar: str
                     </Avatar>
                     <div>
                         <p className="font-semibold">{name}</p>
-                        <p className="text-sm text-muted-foreground">Paciente Verificado</p>
+                        <p className="text-sm text-card-foreground/80">Paciente Verificado</p>
                     </div>
                 </div>
             </CardContent>
