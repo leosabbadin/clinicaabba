@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HeartPulse, Medal, PersonStanding, Activity, Shield, Dumbbell, Bone } from "lucide-react";
 import Image from "next/image";
@@ -60,33 +59,19 @@ const servicesList = [
 function ServiceCard({ name, description, icon: Icon, imageId }: { name: string; description: string; icon: React.ElementType; imageId: string; }) {
   const image = PlaceHolderImages.find(p => p.id === imageId);
 
-  if (!image) {
-    return (
-        <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1 bg-card text-card-foreground">
-        <CardHeader className="flex flex-row items-center gap-4">
-          <div className="rounded-full bg-accent p-3">
-            <Icon className="h-6 w-6 text-primary" />
-          </div>
-          <CardTitle className="font-headline text-xl">{name}</CardTitle>
-        </CardHeader>
-        <CardContent className="flex-grow">
-          <p className="text-sm text-card-foreground">{description}</p>
-        </CardContent>
-      </Card>
-    );
-  }
-
   return (
     <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1 bg-card text-card-foreground">
-      <div className="relative h-[400px] w-full">
-        <Image
-          src={image.imageUrl}
-          alt={image.description}
-          fill
-          className={`object-cover ${name === 'Pilates' ? 'object-bottom' : ''}`}
-          data-ai-hint={image.imageHint}
-        />
-      </div>
+      {image && (
+         <div className="relative h-[400px] w-full">
+            <Image
+            src={image.imageUrl}
+            alt={image.description}
+            fill
+            className={`object-cover ${name === 'Pilates' ? 'object-bottom' : ''}`}
+            data-ai-hint={image.imageHint}
+            />
+        </div>
+      )}
       <CardHeader className="flex flex-row items-center gap-4">
         <div className="rounded-full bg-accent p-3">
           <Icon className="h-6 w-6 text-primary" />

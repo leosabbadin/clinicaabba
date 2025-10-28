@@ -22,10 +22,10 @@ const features = [
   },
 ];
 
-const methodImage = PlaceHolderImages.find(p => p.id === 'method-therapist');
-
 export default function Method() {
     const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
+    const methodImage = PlaceHolderImages.find(p => p.id === 'method-therapist');
+    
   return (
     <section id="method" className="w-full bg-background py-16 md:py-24">
       <div className="container mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 md:grid-cols-2">
