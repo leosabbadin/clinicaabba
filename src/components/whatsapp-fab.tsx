@@ -32,7 +32,7 @@ function WhatsAppIcon(props: SVGProps<SVGSVGElement>) {
 export default function WhatsAppFab() {
   return (
     <Link
-      href="https://wa.me/1234567890"
+      href="https://wa.me/5562986025326"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110"

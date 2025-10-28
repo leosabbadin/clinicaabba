@@ -58,7 +58,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:flex">
-            <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
               Agende uma Consulta
             </Link>
           </Button>
@@ -81,7 +81,7 @@ export default function Header() {
                   </Link>
                 ))}
                  <Button asChild className="w-full">
-                  <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
                     Agende uma Consulta
                   </Link>
                 </Button>

@@ -33,7 +33,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
-              <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
                 QUERO ALIVIAR MINHA DOR AGORA
               </Link>
             </Button>

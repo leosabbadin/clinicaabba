@@ -114,7 +114,7 @@ export default function Services() {
         </div>
         <div className="mt-12 text-center">
             <Button asChild size="lg">
-                <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/5562986025326" target="_blank" rel="noopener noreferrer">
                 AGENDAR MINHA AVALIAÇÃO
                 </Link>
             </Button>
