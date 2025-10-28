@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Location() {
   const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
+  const mapsLink = "https://maps.app.goo.gl/4rXjTBQ3cX2HgkED6?g_st=ipc";
   return (
     <section id="location" className="w-full bg-background py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 text-center">
@@ -15,13 +16,13 @@ export default function Location() {
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:max-w-3xl mx-auto">
-          <div className="flex flex-col items-center gap-4">
-            <MapPin className="h-8 w-8 text-primary" />
+          <Link href={mapsLink} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-4 group">
+            <MapPin className="h-8 w-8 text-primary transition-colors group-hover:text-primary/80" />
             <div className="text-center">
               <h3 className="text-lg font-semibold">Endereço</h3>
-              <p className="text-muted-foreground">Av. Ipanema N° 684 Quadra 3 Lote 14 jardim Atlântico - Goiânia</p>
+              <p className="text-muted-foreground transition-colors group-hover:text-primary">Av. Ipanema N° 684 Quadra 3 Lote 14 jardim Atlântico - Goiânia</p>
             </div>
-          </div>
+          </Link>
           <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-4 group">
             <Phone className="h-8 w-8 text-primary transition-colors group-hover:text-primary/80" />
             <div className="text-center">
@@ -31,20 +32,20 @@ export default function Location() {
           </Link>
         </div>
 
+        <div className="mt-12">
+            <Button asChild size="lg">
+              <Link href={mapsLink} target="_blank" rel="noopener noreferrer">
+                <MapPin className="mr-2 h-5 w-5" />
+                Ver no Google Maps
+              </Link>
+            </Button>
+        </div>
+
         <div className="mt-12 rounded-lg border bg-card p-6 max-w-md mx-auto">
             <h3 className="font-semibold">Horário de Funcionamento</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               <li className="flex justify-between"><span>Segunda a Sexta</span> <span>06:00 - 21:00</span></li>
             </ul>
-        </div>
-
-        <div className="mt-12">
-            <Button asChild size="lg">
-              <Link href="https://maps.app.goo.gl/4rXjTBQ3cX2HgkED6?g_st=ipc" target="_blank" rel="noopener noreferrer">
-                <MapPin className="mr-2 h-5 w-5" />
-                Ver no Google Maps
-              </Link>
-            </Button>
         </div>
 
       </div>
