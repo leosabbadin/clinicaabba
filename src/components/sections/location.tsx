@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Location() {
+  const whatsappLink = "https://wa.me/5562986025326?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.";
   return (
     <section id="location" className="w-full bg-background py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 text-center">
@@ -21,13 +22,13 @@ export default function Location() {
               <p className="text-muted-foreground">Av. Ipanema N° 684 Quadra 3 Lote 14 jardim Atlântico - Goiânia</p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <Phone className="h-8 w-8 text-primary" />
+          <Link href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-4 group">
+            <Phone className="h-8 w-8 text-primary transition-colors group-hover:text-primary/80" />
             <div className="text-center">
               <h3 className="text-lg font-semibold">Telefone</h3>
-              <p className="text-muted-foreground">(62) 9 8602-5326</p>
+              <p className="text-muted-foreground transition-colors group-hover:text-primary">(62) 9 8602-5326</p>
             </div>
-          </div>
+          </Link>
           <div className="flex flex-col items-center gap-4">
             <Mail className="h-8 w-8 text-primary" />
             <div className="text-center">
