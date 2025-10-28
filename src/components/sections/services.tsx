@@ -65,8 +65,25 @@ const servicesList = [
 ];
 
 function ServiceCard({ name, description, icon: Icon, imageId, imageUrl: customImageUrl }: { name: string; description: string; icon: React.ElementType; imageId: string; imageUrl?: string; }) {
-  const placeholder = PlaceHolderImages.find(p => p.id === imageId);
+  const placeholder = !customImageUrl ? PlaceHolderImages.find(p => p.id === imageId) : null;
   const imageUrl = customImageUrl || placeholder?.imageUrl;
+  
+  if (!imageUrl) {
+    return (
+        <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1 bg-card text-card-foreground">
+        <CardHeader className="flex flex-row items-center gap-4">
+          <div className="rounded-full bg-accent p-3">
+            <Icon className="h-6 w-6 text-primary" />
+          </div>
+          <CardTitle className="font-headline text-xl">{name}</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-sm text-card-foreground">{description}</p>
+        </CardContent>
+      </Card>
+    );
+  }
+
   const imageDescription = placeholder?.description || name;
   const imageHint = placeholder?.imageHint || name.toLowerCase().split(' ').slice(0, 2).join(' ');
 
